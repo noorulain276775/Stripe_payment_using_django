@@ -1,11 +1,10 @@
 from django.db import models
-from django.contrib.auth.models import User
-from add_to_cart.models import Product
+from add_to_cart.models import Product, MyUser
 
 # Create your models here.
 
 class CartAbstract(models.Model):
-    user= models.ForeignKey(User, on_delete=models.CASCADE)
+    user= models.ForeignKey(MyUser, on_delete=models.CASCADE)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 
