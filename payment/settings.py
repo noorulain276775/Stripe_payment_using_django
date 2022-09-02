@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'add_to_cart',
+    'add_to_cart.apps.AddToCartConfig',
     'carts'
 ]
 
